@@ -1,0 +1,23 @@
+# Configuration file for Android 4-Choice Quiz Solver
+
+# Google Gemini API Key (or set GEMINI_API_KEY environment variable)
+gemini_api_key: ""
+
+# Gemini Model name (gemini-1.5-flash or gemini-2.5-flash or gemini-1.5-pro)
+model_name: "gemini-1.5-flash"
+
+# Device mode: "termux_adb" or "mock"
+device_mode: "termux_adb"
+
+# Termux ADB host & port (default Android wireless debugging port, or localhost:5555)
+adb_host: "127.0.0.1"
+adb_port: 5555
+
+# Loop settings
+loop_interval_sec: 2.5
+max_iterations: 0   # 0 means infinite loop until stopped
+dry_run: false      # If true, detects answer but does not actually tap
+
+# Screenshot save path
+debug_screenshot_dir: "debug_captures"
+save_debug_screenshots: true
